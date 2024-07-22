@@ -8,7 +8,6 @@ import * as z from "zod";
 import { fetchData } from "@/lib/api";
 import { revalidatePath } from "next/cache";
 import { useSearch } from "../context";
-import { set } from "mongoose";
 
 const schema = z.object({
 	title: z.string().min(1, "Title is required"),
